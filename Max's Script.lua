@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("maxs First script hub", "BloodTheme")
+local Window = Library.CreateLib("My First Script", "BloodTheme")
 
 if game.PlaceId == 5194438573 then
     -- MAIN
@@ -11,6 +11,10 @@ if game.PlaceId == 5194438573 then
         loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
     end)
 
+    MainSection:NewButton("Kill all", "just kills all", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/QuoniamScripting/Roblox-Player-Kill-Script/main/Script'))()
+    end)
+
     MainSection:NewToggle("Super-Human", " Go Fast and jump high", function(state)
         if state then
             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
@@ -20,8 +24,8 @@ if game.PlaceId == 5194438573 then
             game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
         end
     end)
-    
 
+ 
     MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
     end)
@@ -84,7 +88,7 @@ elseif game.PlaceId == 8554378337 then
      end)
 
 
-     
+    
      MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
          loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
      end)
