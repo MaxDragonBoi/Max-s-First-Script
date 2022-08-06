@@ -76,6 +76,10 @@ elseif game.PlaceId == 8554378337 then
      MainSection:NewButton("Back/Front Flip", "Makes you do gymnastics", function()
          loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
      end)
+
+     MainSection:NewButton("Kill all", "just kills all", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/QuoniamScripting/Roblox-Player-Kill-Script/main/Script'))()
+    end)
  
      MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
          if state then
